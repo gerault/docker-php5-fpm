@@ -4,6 +4,8 @@ LABEL Description="PHP5 from Mathieu GERAULT"
 
 # Some dependencies
 RUN apt-get update && apt-get upgrade -y \ 
+		wget \
+		unzip \
 		libfreetype6-dev \ 	
 		libjpeg62-turbo-dev \ 
 		libpq-dev \ 
